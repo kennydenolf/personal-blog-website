@@ -1,5 +1,14 @@
-p{
+p {
     color: gray;
     font-size: 2em;
     margin: 25px;
+}
+
+
+h1 {
+    color: black;
+}
+
+h2 {
+    color: black;
 }
