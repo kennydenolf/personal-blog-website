@@ -1,0 +1,25 @@
+.read-more-btn{
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.2s;
+    background-color: transparent;
+    width: 150px;
+    padding: 6px;
+    margin-top: 12px;
+    border: 2px solid #30E5C2;
+    border-radius: 10px;
+    color: #30E5C2;
+    font-family: "Roboto Slab",serif;
+    font-size: 0.7em;
+    letter-spacing: 0.1em;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: transform .5s;
+}
+
+.read-more-btn:hover{
+    background-color: #30E5C2;
+    color: #fff;
+    transform: scale(1.05);
+}

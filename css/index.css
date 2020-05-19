@@ -1,0 +1,72 @@
+@import "style.css";
+@import "nav.css";
+@import "card.css";
+@import "footer.css";
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {background-color: #E0E0E0;}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px auto 60px;
+    margin:0;
+    grid-template-areas: 
+    "nav"
+    "posts"
+    "ft";
+}
+
+/* small Screens */
+.posts {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap:12px;
+    margin:12px;
+    grid-template-areas: 
+    "card-1"
+    "card-2"
+    "card-3"
+    "card-4"
+    "card-5"
+    "card-6"
+    ;
+
+}
+
+/* Medium Screens */
+@media (min-width: 600px) and (max-width:900px) {
+    .posts {        
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+        margin: 24px;
+        grid-template-areas: 
+        "card-1 card-2" 
+        "card-3 card-4" 
+        "card-5 card-6"
+        ;
+    }
+}
+
+/* Large Screens */
+@media (min-width: 901px) {
+    .posts {     
+        grid-template-columns: repeat(3, 1fr);
+        margin:24px;
+        gap: 24px;
+        grid-template-areas: 
+        "card-1 card-2 card-3" 
+        "card-4 card-5 card-6" 
+        ;
+    }
+}
+
+.posts{
+    grid-area: posts;
+}
+

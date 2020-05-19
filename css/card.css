@@ -1,0 +1,105 @@
+@import "button.css";
+
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 430px;
+    justify-content: top; 
+    align-items: center;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086);
+
+}
+
+#card-1 {
+    grid-area: card-1;
+}
+#card-2 {
+    grid-area: card-2;
+}
+#card-3 {
+    grid-area: card-3;
+}
+#card-4 {
+    grid-area: card-4;
+}
+#card-5 {
+    grid-area: card-5;
+}
+#card-6 {
+    grid-area: card-6;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    background-color: white;
+    padding: 20px;
+    
+}
+
+.card-image {
+    width: 100%;
+    height: 50%;
+    
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+#image-card-1 {
+    background-image: url("../img/westhighlandway.jpg");
+}
+
+#image-card-2 {
+    background-image: url("../img/ardennen.jpg");
+}
+
+#image-card-3 {
+    background-image: url("../img/kungsleden.jpg");
+}
+
+#image-card-4 {
+    background-image: url("../img/montblanc.jpg");
+}
+
+#image-card-5 {
+    background-image: url("../img/tauern.jpg");
+}
+
+#image-card-6 {
+    background-image: url("../img/corsica.jpg");
+}
+
+.blog-post-title {
+    font-size: 1.4em;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    transition: transform .2s;
+}
+
+.blog-post-title:hover {
+    color: #30e5c2;
+    transform: scale(1.05);
+}
+
+.blog-creation-info {
+    font-size: 0.6em;
+    font-family: 'Roboto Slab',serif;
+    text-align: center;
+}
+.blog-post-summary {
+    font-size: 0.7em;
+    font-family: 'Roboto Slab',serif;
+}
