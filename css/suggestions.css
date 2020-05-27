@@ -1,0 +1,105 @@
+.suggestions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-area: suggestions;
+    background-color:#fff;
+    width: 100%;
+    padding: 0 24px 24px 24px;
+    border-radius: 10px;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072);
+}
+
+/* small Screens */
+.suggestion-cards {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    row-gap: 24px;
+    column-gap: 24px;
+    grid-template-areas:
+    "suggestion-1"
+    "suggestion-2"
+    "suggestion-3"
+    "suggestion-4";
+}
+
+/* Medium Screens */
+@media (min-width: 600px) and (max-width:900px) {
+    .suggestion-cards {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+        "suggestion-1 suggestion-2"
+        "suggestion-3 suggestion-4";
+    }
+}
+
+/* Large Screens */
+@media (min-width: 901px) {
+    .suggestion-cards {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+        "suggestion-1 suggestion-2 suggestion-3 suggestion-4";
+    }
+}
+
+.suggestion {
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072);
+}
+
+.suggestion-link {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.5em;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+#suggestion-1 {
+    grid-area: suggestion-1;
+    background-image: url("../img/ardennen.jpg");
+}
+
+#suggestion-2 {
+    grid-area: suggestion-2;
+    background-image: url("../img/montblanc.jpg");
+}
+
+#suggestion-3 {
+    grid-area: suggestion-3;
+    background-image: url("../img/tauern.jpg");
+}
+
+#suggestion-4 {
+    grid-area: suggestion-4;
+    background-image: url("../img/corsica.jpg");
+}
+
+.suggestion-link {
+    color: #fff;
+
+}
+
+.suggestion-link:hover {
+    color: #30e5c2;
+}

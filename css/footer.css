@@ -1,12 +1,8 @@
 footer {
     grid-area: ft;
     background-color:#333;
+    padding-top: 5px;
     text-align:center;
-    font-family: 'Pacifico', cursive;
-    font-size: 1em;
-    color: #fff;
-    padding-top: 10px;
-    
 }
 
 .designed-by{
@@ -16,9 +12,16 @@ footer {
     align-items: center;
 }
 
+.designed-by-info {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.1em;
+    color: #fff;
+    margin: 0;
+}
+
 .fab {
     color: #fff;
-    margin-left: 20px; 
+    margin-left: 20px;
 }
 
 .fab:hover {

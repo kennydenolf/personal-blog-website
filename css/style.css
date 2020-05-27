@@ -1,0 +1,110 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E0E0E0;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Roboto Slab',serif;
+    margin: 0.2em 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.2em;
+}
+
+h2 {
+    font-size: 1.7em;
+    color: #333;
+}
+
+h3 {
+    font-size: 1.4em;
+    color: #333;
+}
+
+h4 {
+    font-size: 1.2em;
+    color: #828282;
+}
+p {
+    font-family: 'Roboto Slab',serif;
+    font-size: 1.0em;
+    text-align: justify;
+    margin: 1em 0 0;
+    color: #4f4f4f;
+}
+
+p.thick {
+    font-weight: bold;
+}
+
+p.italic {
+    font-style: italic;
+}
+
+p.underline {
+    text-decoration: underline;
+}
+
+em {
+    font-family: 'Roboto Slab',serif;
+    font-weight: bold;
+    font-style: italic;
+}
+
+li {
+    
+    list-style-position: outside;
+    margin-left: 1em;
+    margin-top: 1em;
+    font-family: 'Roboto Slab',serif;
+    font-size: 1em;
+    color: #4f4f4f;
+}
+
+a {
+    text-decoration: none;
+}
+
+.in-page-link {
+    color: #1AA3BB;
+}
+
+q,
+blockquote {
+    quotes: "“" "”" "‘" "’";
+    font-style: italic;
+    font-family: 'Roboto Slab',serif;
+}
+
+q:before,
+blockquote:before {
+    content: open-quote;
+}
+
+q:after,
+blockquote:after {
+    content: close-quote;
+}
+
+q:before,
+q:after,
+blockquote:before,
+blockquote:after {
+    color: d#1AA3BB;
+    font-size: 1.2em;
+}
+
+blockquote {
+    margin-top: 12px;
+    margin-left: 0;
+    padding-left: 1em;
+    border-left: 5px solid #1AA3BB;
+}

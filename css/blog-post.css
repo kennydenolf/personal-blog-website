@@ -1,0 +1,71 @@
+@import "style.css";
+@import "nav.css";
+@import "blog-post-banner.css";
+@import "about-autor.css";
+@import "blog-article.css";
+@import "suggestions.css";
+@import "footer.css";
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px auto 60px;
+    row-gap: 12px;
+    grid-template-areas:
+    "nav"
+    "wrapper"
+    "ft";
+}
+
+/* small Screens */
+
+.wrapper {
+    grid-area: wrapper;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px auto auto auto;
+    row-gap:12px;
+    column-gap: 12px;
+    margin-left:5%;
+    margin-right: 5%;
+    grid-template-areas:
+    "banner"
+    "about"
+    "blog-article"
+    "suggestions";
+}
+
+/* Medium Screens */
+@media (min-width: 600px) and (max-width:900px) {
+
+    .wrapper {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 200px auto auto auto;
+        row-gap:12px;
+        column-gap: 12px;
+        margin-left:5%;
+        margin-right: 5%;
+        grid-template-areas:
+        "banner banner"
+        "about about"
+        "blog-article blog-article"
+        "suggestions suggestions";
+    }
+}
+
+/* Large Screens */
+@media (min-width: 901px) {
+
+    .wrapper {
+        grid-template-columns: auto 450px;
+        grid-template-rows: 220px auto auto;
+        row-gap:12px;
+        column-gap: 12px;
+        margin-left:10%;
+        margin-right: 10%;
+        grid-template-areas:
+        "banner about"
+        "blog-article blog-article"
+        "suggestions suggestions";
+    }
+}
